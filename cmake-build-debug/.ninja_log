@@ -1,0 +1,16 @@
+# ninja log v6
+2	278	7470714957299817	build.ninja	6759fa15c082c9b3
+2937	3110	7470706470089652	test.exe	527ea113b702c659
+6	267	7470715687521383	CMakeFiles/3D_Test.dir/src/CameraDirection.cpp.obj.ddi	28b04bddb5a69cb9
+19	901	7470715687651439	CMakeFiles/3D_Test.dir/src/WindowsKey.cpp.obj.ddi	daeb3f62bcfc63cf
+47	1096	7470715687936268	CMakeFiles/3D_Test.dir/src/glad.c.obj	956c782caf45e6c8
+33	1153	7470715687790682	CMakeFiles/3D_Test.dir/src/main.cpp.obj.ddi	976386d2c3aa2fb3
+1153	1228	7470715699706904	CMakeFiles/3D_Test.dir/CXX.dd	a452c5c8bf174b90
+1153	1228	7470715699706904	D:/David/CPP_Code/WIP/3D_Test/cmake-build-debug/CMakeFiles/3D_Test.dir/CXXModules.json	a452c5c8bf174b90
+1153	1228	7470715699706904	CMakeFiles/3D_Test.dir/src/CameraDirection.cpp.obj.modmap	a452c5c8bf174b90
+1153	1228	7470715699706904	CMakeFiles/3D_Test.dir/src/WindowsKey.cpp.obj.modmap	a452c5c8bf174b90
+1153	1228	7470715699706904	CMakeFiles/3D_Test.dir/src/main.cpp.obj.modmap	a452c5c8bf174b90
+1229	1840	7470715699742063	CMakeFiles/3D_Test.dir/src/CameraDirection.cpp.obj	c5e80f7f8a4aafc9
+1243	2744	7470715699890717	CMakeFiles/3D_Test.dir/src/WindowsKey.cpp.obj	7a9a4bec9eb8d3d6
+1257	3352	7470715700027097	CMakeFiles/3D_Test.dir/src/main.cpp.obj	ed757956668a2928
+3353	3525	7470715720993729	3D_Test.exe	b75d50fcbc53b70f

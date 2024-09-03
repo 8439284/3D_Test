@@ -1,0 +1,21 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "D:/David/CPP_Code/WIP/3D_Test/cmake-build-debug",
+	"dir-cur-src" : "D:/David/CPP_Code/WIP/3D_Test",
+	"dir-top-bld" : "D:/David/CPP_Code/WIP/3D_Test/cmake-build-debug",
+	"dir-top-src" : "D:/David/CPP_Code/WIP/3D_Test",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"D:\\David\\CPP_Code\\WIP\\3D_Test\\.\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "D:/David/CPP_Code/WIP/3D_Test/cmake-build-debug/CMakeFiles/3D_Test.dir"
+}
