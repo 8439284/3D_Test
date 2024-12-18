@@ -37,6 +37,14 @@ add_executable(${PROJECT_NAME} ${src_dir}
         src/Line.h
         src/Point.cpp
         src/Point.h
+        src/shaderClass.h
+        src/shaderClass.cpp
+        src/VBO.cpp
+        src/VBO.h
+        src/EBO.cpp
+        src/EBO.h
+        src/VAO.cpp
+        src/VAO.h
 )
 target_link_libraries(${PROJECT_NAME}
         glfw3

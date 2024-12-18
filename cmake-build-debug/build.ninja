@@ -83,6 +83,23 @@ build CMakeFiles/3D_Test.dir/src/Draw.cpp.obj: CXX_COMPILER__3D_Test_scanned_Deb
   OBJECT_FILE_DIR = CMakeFiles\3D_Test.dir\src
   dyndep = CMakeFiles/3D_Test.dir/CXX.dd
 
+build CMakeFiles/3D_Test.dir/src/EBO.cpp.obj.ddi: CXX_SCAN__3D_Test_Debug D$:/David/CPP_Code/WIP/3D_Test_alpha/src/EBO.cpp || cmake_object_order_depends_target_3D_Test
+  DEP_FILE = CMakeFiles\3D_Test.dir\src\EBO.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\3D_Test.dir\src\EBO.cpp.obj.ddi
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/David/CPP_Code/WIP/3D_Test_alpha/./include
+  OBJ_FILE = CMakeFiles\3D_Test.dir\src\EBO.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\3D_Test.dir\src\EBO.cpp.obj.ddi.i
+
+build CMakeFiles/3D_Test.dir/src/EBO.cpp.obj: CXX_COMPILER__3D_Test_scanned_Debug D$:/David/CPP_Code/WIP/3D_Test_alpha/src/EBO.cpp | CMakeFiles/3D_Test.dir/src/EBO.cpp.obj.modmap || cmake_object_order_depends_target_3D_Test CMakeFiles/3D_Test.dir/CXX.dd
+  DEP_FILE = CMakeFiles\3D_Test.dir\src\EBO.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\3D_Test.dir\src\EBO.cpp.obj.modmap
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/David/CPP_Code/WIP/3D_Test_alpha/./include
+  OBJECT_DIR = CMakeFiles\3D_Test.dir
+  OBJECT_FILE_DIR = CMakeFiles\3D_Test.dir\src
+  dyndep = CMakeFiles/3D_Test.dir/CXX.dd
+
 build CMakeFiles/3D_Test.dir/src/Line.cpp.obj.ddi: CXX_SCAN__3D_Test_Debug D$:/David/CPP_Code/WIP/3D_Test_alpha/src/Line.cpp || cmake_object_order_depends_target_3D_Test
   DEP_FILE = CMakeFiles\3D_Test.dir\src\Line.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\3D_Test.dir\src\Line.cpp.obj.ddi
@@ -111,6 +128,40 @@ build CMakeFiles/3D_Test.dir/src/Point.cpp.obj.ddi: CXX_SCAN__3D_Test_Debug D$:/
 build CMakeFiles/3D_Test.dir/src/Point.cpp.obj: CXX_COMPILER__3D_Test_scanned_Debug D$:/David/CPP_Code/WIP/3D_Test_alpha/src/Point.cpp | CMakeFiles/3D_Test.dir/src/Point.cpp.obj.modmap || cmake_object_order_depends_target_3D_Test CMakeFiles/3D_Test.dir/CXX.dd
   DEP_FILE = CMakeFiles\3D_Test.dir\src\Point.cpp.obj.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\3D_Test.dir\src\Point.cpp.obj.modmap
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/David/CPP_Code/WIP/3D_Test_alpha/./include
+  OBJECT_DIR = CMakeFiles\3D_Test.dir
+  OBJECT_FILE_DIR = CMakeFiles\3D_Test.dir\src
+  dyndep = CMakeFiles/3D_Test.dir/CXX.dd
+
+build CMakeFiles/3D_Test.dir/src/VAO.cpp.obj.ddi: CXX_SCAN__3D_Test_Debug D$:/David/CPP_Code/WIP/3D_Test_alpha/src/VAO.cpp || cmake_object_order_depends_target_3D_Test
+  DEP_FILE = CMakeFiles\3D_Test.dir\src\VAO.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\3D_Test.dir\src\VAO.cpp.obj.ddi
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/David/CPP_Code/WIP/3D_Test_alpha/./include
+  OBJ_FILE = CMakeFiles\3D_Test.dir\src\VAO.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\3D_Test.dir\src\VAO.cpp.obj.ddi.i
+
+build CMakeFiles/3D_Test.dir/src/VAO.cpp.obj: CXX_COMPILER__3D_Test_scanned_Debug D$:/David/CPP_Code/WIP/3D_Test_alpha/src/VAO.cpp | CMakeFiles/3D_Test.dir/src/VAO.cpp.obj.modmap || cmake_object_order_depends_target_3D_Test CMakeFiles/3D_Test.dir/CXX.dd
+  DEP_FILE = CMakeFiles\3D_Test.dir\src\VAO.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\3D_Test.dir\src\VAO.cpp.obj.modmap
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/David/CPP_Code/WIP/3D_Test_alpha/./include
+  OBJECT_DIR = CMakeFiles\3D_Test.dir
+  OBJECT_FILE_DIR = CMakeFiles\3D_Test.dir\src
+  dyndep = CMakeFiles/3D_Test.dir/CXX.dd
+
+build CMakeFiles/3D_Test.dir/src/VBO.cpp.obj.ddi: CXX_SCAN__3D_Test_Debug D$:/David/CPP_Code/WIP/3D_Test_alpha/src/VBO.cpp || cmake_object_order_depends_target_3D_Test
+  DEP_FILE = CMakeFiles\3D_Test.dir\src\VBO.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\3D_Test.dir\src\VBO.cpp.obj.ddi
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/David/CPP_Code/WIP/3D_Test_alpha/./include
+  OBJ_FILE = CMakeFiles\3D_Test.dir\src\VBO.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\3D_Test.dir\src\VBO.cpp.obj.ddi.i
+
+build CMakeFiles/3D_Test.dir/src/VBO.cpp.obj: CXX_COMPILER__3D_Test_scanned_Debug D$:/David/CPP_Code/WIP/3D_Test_alpha/src/VBO.cpp | CMakeFiles/3D_Test.dir/src/VBO.cpp.obj.modmap || cmake_object_order_depends_target_3D_Test CMakeFiles/3D_Test.dir/CXX.dd
+  DEP_FILE = CMakeFiles\3D_Test.dir\src\VBO.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\3D_Test.dir\src\VBO.cpp.obj.modmap
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -ID:/David/CPP_Code/WIP/3D_Test_alpha/./include
   OBJECT_DIR = CMakeFiles\3D_Test.dir
@@ -158,7 +209,24 @@ build CMakeFiles/3D_Test.dir/src/main.cpp.obj: CXX_COMPILER__3D_Test_scanned_Deb
   OBJECT_FILE_DIR = CMakeFiles\3D_Test.dir\src
   dyndep = CMakeFiles/3D_Test.dir/CXX.dd
 
-build CMakeFiles/3D_Test.dir/CXX.dd | D$:/David/CPP_Code/WIP/3D_Test_alpha/cmake-build-debug/CMakeFiles/3D_Test.dir/CXXModules.json CMakeFiles/3D_Test.dir/src/CameraDirection.cpp.obj.modmap CMakeFiles/3D_Test.dir/src/Draw.cpp.obj.modmap CMakeFiles/3D_Test.dir/src/Line.cpp.obj.modmap CMakeFiles/3D_Test.dir/src/Point.cpp.obj.modmap CMakeFiles/3D_Test.dir/src/WindowsKey.cpp.obj.modmap CMakeFiles/3D_Test.dir/src/main.cpp.obj.modmap: CXX_DYNDEP__3D_Test_Debug CMakeFiles/3D_Test.dir/src/CameraDirection.cpp.obj.ddi CMakeFiles/3D_Test.dir/src/Draw.cpp.obj.ddi CMakeFiles/3D_Test.dir/src/Line.cpp.obj.ddi CMakeFiles/3D_Test.dir/src/Point.cpp.obj.ddi CMakeFiles/3D_Test.dir/src/WindowsKey.cpp.obj.ddi CMakeFiles/3D_Test.dir/src/main.cpp.obj.ddi | D$:/David/CPP_Code/WIP/3D_Test_alpha/cmake-build-debug/CMakeFiles/3D_Test.dir/CXXDependInfo.json
+build CMakeFiles/3D_Test.dir/src/shaderClass.cpp.obj.ddi: CXX_SCAN__3D_Test_Debug D$:/David/CPP_Code/WIP/3D_Test_alpha/src/shaderClass.cpp || cmake_object_order_depends_target_3D_Test
+  DEP_FILE = CMakeFiles\3D_Test.dir\src\shaderClass.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\3D_Test.dir\src\shaderClass.cpp.obj.ddi
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/David/CPP_Code/WIP/3D_Test_alpha/./include
+  OBJ_FILE = CMakeFiles\3D_Test.dir\src\shaderClass.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\3D_Test.dir\src\shaderClass.cpp.obj.ddi.i
+
+build CMakeFiles/3D_Test.dir/src/shaderClass.cpp.obj: CXX_COMPILER__3D_Test_scanned_Debug D$:/David/CPP_Code/WIP/3D_Test_alpha/src/shaderClass.cpp | CMakeFiles/3D_Test.dir/src/shaderClass.cpp.obj.modmap || cmake_object_order_depends_target_3D_Test CMakeFiles/3D_Test.dir/CXX.dd
+  DEP_FILE = CMakeFiles\3D_Test.dir\src\shaderClass.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\3D_Test.dir\src\shaderClass.cpp.obj.modmap
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/David/CPP_Code/WIP/3D_Test_alpha/./include
+  OBJECT_DIR = CMakeFiles\3D_Test.dir
+  OBJECT_FILE_DIR = CMakeFiles\3D_Test.dir\src
+  dyndep = CMakeFiles/3D_Test.dir/CXX.dd
+
+build CMakeFiles/3D_Test.dir/CXX.dd | D$:/David/CPP_Code/WIP/3D_Test_alpha/cmake-build-debug/CMakeFiles/3D_Test.dir/CXXModules.json CMakeFiles/3D_Test.dir/src/CameraDirection.cpp.obj.modmap CMakeFiles/3D_Test.dir/src/Draw.cpp.obj.modmap CMakeFiles/3D_Test.dir/src/EBO.cpp.obj.modmap CMakeFiles/3D_Test.dir/src/Line.cpp.obj.modmap CMakeFiles/3D_Test.dir/src/Point.cpp.obj.modmap CMakeFiles/3D_Test.dir/src/VAO.cpp.obj.modmap CMakeFiles/3D_Test.dir/src/VBO.cpp.obj.modmap CMakeFiles/3D_Test.dir/src/WindowsKey.cpp.obj.modmap CMakeFiles/3D_Test.dir/src/main.cpp.obj.modmap CMakeFiles/3D_Test.dir/src/shaderClass.cpp.obj.modmap: CXX_DYNDEP__3D_Test_Debug CMakeFiles/3D_Test.dir/src/CameraDirection.cpp.obj.ddi CMakeFiles/3D_Test.dir/src/Draw.cpp.obj.ddi CMakeFiles/3D_Test.dir/src/EBO.cpp.obj.ddi CMakeFiles/3D_Test.dir/src/Line.cpp.obj.ddi CMakeFiles/3D_Test.dir/src/Point.cpp.obj.ddi CMakeFiles/3D_Test.dir/src/VAO.cpp.obj.ddi CMakeFiles/3D_Test.dir/src/VBO.cpp.obj.ddi CMakeFiles/3D_Test.dir/src/WindowsKey.cpp.obj.ddi CMakeFiles/3D_Test.dir/src/main.cpp.obj.ddi CMakeFiles/3D_Test.dir/src/shaderClass.cpp.obj.ddi | D$:/David/CPP_Code/WIP/3D_Test_alpha/cmake-build-debug/CMakeFiles/3D_Test.dir/CXXDependInfo.json
 
 
 # =============================================================================
@@ -168,7 +236,7 @@ build CMakeFiles/3D_Test.dir/CXX.dd | D$:/David/CPP_Code/WIP/3D_Test_alpha/cmake
 #############################################
 # Link the executable 3D_Test.exe
 
-build 3D_Test.exe: CXX_EXECUTABLE_LINKER__3D_Test_Debug CMakeFiles/3D_Test.dir/src/CameraDirection.cpp.obj CMakeFiles/3D_Test.dir/src/Draw.cpp.obj CMakeFiles/3D_Test.dir/src/Line.cpp.obj CMakeFiles/3D_Test.dir/src/Point.cpp.obj CMakeFiles/3D_Test.dir/src/WindowsKey.cpp.obj CMakeFiles/3D_Test.dir/src/glad.c.obj CMakeFiles/3D_Test.dir/src/main.cpp.obj
+build 3D_Test.exe: CXX_EXECUTABLE_LINKER__3D_Test_Debug CMakeFiles/3D_Test.dir/src/CameraDirection.cpp.obj CMakeFiles/3D_Test.dir/src/Draw.cpp.obj CMakeFiles/3D_Test.dir/src/EBO.cpp.obj CMakeFiles/3D_Test.dir/src/Line.cpp.obj CMakeFiles/3D_Test.dir/src/Point.cpp.obj CMakeFiles/3D_Test.dir/src/VAO.cpp.obj CMakeFiles/3D_Test.dir/src/VBO.cpp.obj CMakeFiles/3D_Test.dir/src/WindowsKey.cpp.obj CMakeFiles/3D_Test.dir/src/glad.c.obj CMakeFiles/3D_Test.dir/src/main.cpp.obj CMakeFiles/3D_Test.dir/src/shaderClass.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lglfw3  -lopenGL32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LD:/David/CPP_Code/WIP/3D_Test_alpha/./lib

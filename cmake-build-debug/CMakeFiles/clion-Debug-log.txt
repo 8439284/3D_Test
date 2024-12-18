@@ -1,4 +1,4 @@
 D:\David\Pt_Program\CLion-2024.2.0.1.win\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/David/Pt_Program/CLion-2024.2.0.1.win/bin/ninja/win/x64/ninja.exe -G Ninja -S D:\David\CPP_Code\WIP\3D_Test_alpha -B D:\David\CPP_Code\WIP\3D_Test_alpha\cmake-build-debug
--- Configuring done (1.0s)
+-- Configuring done (0.2s)
 -- Generating done (0.0s)
 -- Build files have been written to: D:/David/CPP_Code/WIP/3D_Test_alpha/cmake-build-debug

@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles\\3D_Test.dir\\src\\Point.cpp.obj",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}

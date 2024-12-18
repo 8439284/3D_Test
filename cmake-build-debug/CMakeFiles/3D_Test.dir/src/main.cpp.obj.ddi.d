@@ -624,5 +624,8 @@ CMakeFiles\3D_Test.dir\src\main.cpp.obj.ddi: \
  D:/David/CPP_Code/WIP/3D_Test_alpha/src/VectorUtil.h \
  D:/David/CPP_Code/WIP/3D_Test_alpha/src/Draw.cpp \
  D:/David/CPP_Code/WIP/3D_Test_alpha/src/CameraDirection.cpp \
- D:/David/CPP_Code/WIP/3D_Test_alpha/src/Point.cpp \
- D:/David/CPP_Code/WIP/3D_Test_alpha/src/Line.cpp
+ D:/David/CPP_Code/WIP/3D_Test_alpha/src/shaderClass.h \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/src/VAO.h \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/src/VBO.h \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/src/EBO.h \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/src/Point.cpp
