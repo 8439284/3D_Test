@@ -1,6 +1,12 @@
 ninja_dyndep_version = 1.0
 build CMakeFiles/3D_Test.dir/src/CameraDirection.cpp.obj: dyndep
 
+build CMakeFiles/3D_Test.dir/src/Draw.cpp.obj: dyndep
+
+build CMakeFiles/3D_Test.dir/src/Line.cpp.obj: dyndep
+
+build CMakeFiles/3D_Test.dir/src/Point.cpp.obj: dyndep
+
 build CMakeFiles/3D_Test.dir/src/WindowsKey.cpp.obj: dyndep
 
 build CMakeFiles/3D_Test.dir/src/main.cpp.obj: dyndep

@@ -1,8 +1,8 @@
-# 0 "D:/David/CPP_Code/WIP/3D_Test/src/CameraDirection.cpp"
-# 1 "D:\\David\\CPP_Code\\WIP\\3D_Test\\cmake-build-debug//"
+# 0 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/CameraDirection.cpp"
+# 1 "D:\\David\\CPP_Code\\WIP\\3D_Test_alpha\\cmake-build-debug//"
 # 0 "<built-in>"
 # 0 "<command-line>"
-# 1 "D:/David/CPP_Code/WIP/3D_Test/src/CameraDirection.cpp"
+# 1 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/CameraDirection.cpp"
 
 
 
@@ -41621,7 +41621,7 @@ namespace std
 # 85 "D:/David/Program/msys64/mingw64/include/c++/14.2.0/iostream" 3
 
 }
-# 5 "D:/David/CPP_Code/WIP/3D_Test/src/CameraDirection.cpp" 2
+# 5 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/CameraDirection.cpp" 2
 # 1 "D:/David/Program/msys64/mingw64/include/c++/14.2.0/vector" 1 3
 # 58 "D:/David/Program/msys64/mingw64/include/c++/14.2.0/vector" 3
        
@@ -46530,7 +46530,7 @@ namespace std
     }
 
 }
-# 6 "D:/David/CPP_Code/WIP/3D_Test/src/CameraDirection.cpp" 2
+# 6 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/CameraDirection.cpp" 2
 # 1 "D:/David/Program/msys64/mingw64/include/c++/14.2.0/cmath" 1 3
 # 39 "D:/David/Program/msys64/mingw64/include/c++/14.2.0/cmath" 3
        
@@ -54241,10 +54241,10 @@ namespace __gnu_cxx
 
 
 }
-# 7 "D:/David/CPP_Code/WIP/3D_Test/src/CameraDirection.cpp" 2
+# 7 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/CameraDirection.cpp" 2
 
 
-# 8 "D:/David/CPP_Code/WIP/3D_Test/src/CameraDirection.cpp"
+# 8 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/CameraDirection.cpp"
 class CameraDirection {
     double direction[2]{};
 
@@ -54305,14 +54305,14 @@ public:
 
     std::vector<double> getVector() {
         double yaw = direction[0] * 
-# 67 "D:/David/CPP_Code/WIP/3D_Test/src/CameraDirection.cpp" 3
+# 67 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/CameraDirection.cpp" 3
                                    3.14159265358979323846 
-# 67 "D:/David/CPP_Code/WIP/3D_Test/src/CameraDirection.cpp"
+# 67 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/CameraDirection.cpp"
                                         / 180;
         double pitch = direction[1] * 
-# 68 "D:/David/CPP_Code/WIP/3D_Test/src/CameraDirection.cpp" 3
+# 68 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/CameraDirection.cpp" 3
                                      3.14159265358979323846 
-# 68 "D:/David/CPP_Code/WIP/3D_Test/src/CameraDirection.cpp"
+# 68 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/CameraDirection.cpp"
                                           / 180;
 
         return std::vector<double> {cos(pitch) * cos(yaw), cos(pitch) * sin(yaw), sin(pitch)};

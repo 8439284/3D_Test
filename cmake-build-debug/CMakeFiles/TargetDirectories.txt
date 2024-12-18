@@ -1,3 +1,3 @@
-D:/David/CPP_Code/WIP/3D_Test/cmake-build-debug/CMakeFiles/3D_Test.dir
-D:/David/CPP_Code/WIP/3D_Test/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/David/CPP_Code/WIP/3D_Test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/David/CPP_Code/WIP/3D_Test_alpha/cmake-build-debug/CMakeFiles/3D_Test.dir
+D:/David/CPP_Code/WIP/3D_Test_alpha/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/David/CPP_Code/WIP/3D_Test_alpha/cmake-build-debug/CMakeFiles/rebuild_cache.dir

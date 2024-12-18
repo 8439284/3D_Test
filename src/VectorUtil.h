@@ -53,7 +53,12 @@ class VectorUtil {
 //            }
             return vector1;
         }
-
+//
+        static int* getArray()
+        {
+            int *a=new int[5]{1,2,3,4,5};
+            return a;
+        }
 
 };
 

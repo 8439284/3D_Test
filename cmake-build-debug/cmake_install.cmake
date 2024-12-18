@@ -1,4 +1,4 @@
-# Install script for directory: D:/David/CPP_Code/WIP/3D_Test
+# Install script for directory: D:/David/CPP_Code/WIP/3D_Test_alpha
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/David/CPP_Code/WIP/3D_Test/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/David/CPP_Code/WIP/3D_Test_alpha/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

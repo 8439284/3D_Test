@@ -3,14 +3,19 @@
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <clsdautil/ArrayU.h>
+
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <vector>
 //#include <windows.h>
 #include "WindowsKey.h"
-#include "CameraDirection.cpp"
+//#include "CameraDirection.cpp"
 #include "VectorUtil.h"
+#include "Draw.cpp"
+#include "Point.cpp"
+
 
 
 //#include <Gl/glut.h>
@@ -34,6 +39,16 @@ const char* fragmentShaderSource = "#version 330 core\n"
 int width = 800;
 int height = 800;
 int main() {
+//    Draw test = Draw();
+//    test.init();
+//    Point point(0,0);
+//    Line screenLeftLine = Line(1, 0, 1); // x= -1
+//    Line screenRightLine = Line(1, 0, -1);
+//    Line screenDownLine = Line(0, 1, 1);
+//    Line screenUpLine = Line(0, 1, -1);
+    Draw draw;
+    draw.init();
+    return 0;
 
 //    std::cout << "Hello, World!" << std::endl;
 //    system("pause");
@@ -56,15 +71,20 @@ int main() {
 //    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 
-//    GLfloat vertices[] = {
-//            0.5F, 0.5F, 0.5F,
-//            0.6F, 0.5F, 0.5F,
-//            0.5F, 0.6F, 0.5F,
+    GLfloat vertices[] = {
+            0.5F, 0.5F, 0.5F,
+            0.6F, 0.5F, 0.5F,
+            0.5F, 0.6F, 0.5F,
+    };
+
+
+//    GLuint indices[] = {
+//            0, 1, 2
 //    };
     GLFWwindow* window = glfwCreateWindow(width, height, "3D", NULL, NULL);
-    if (glfwWindowShouldClose(window)) {
-        glfwTerminate();
-    }
+//    if (glfwWindowShouldClose(window)) {
+//        glfwTerminate();
+//    }
 
 
 
@@ -99,11 +119,11 @@ int main() {
 //    std::vector<double> point2 = {1, -1, 0};
 //    std::vector<double> point3 = {1, 0, 1};
     std::vector<std::vector<double>> points = {point1, point2, point3};
-        GLfloat vertices[9] = {
-            0.5F, 0.5F, 0.0F,
-            0.6F, 0.5F, 0.0F,
-            0.5F, 0.6F, 0.0F,
-    };
+//        GLfloat vertices[9] = {
+//            0.0F, 0.0F, 0.0F,
+//            1.0F, 0.0F, 0.0F,
+//            0.0F, 1.0F, 0.0F,
+//    };
         //            0.5F, 0.5F, 0.5F,
     //            0.6F, 0.5F, 0.5F,
     //            0.5F, 0.6F, 0.5F,
@@ -119,6 +139,8 @@ int main() {
         vertices[i * 3 + 1] = screenY;
         vertices[1 * 3 + 2] = 1.0;
     }
+
+    std::cout << *VectorUtil::getArray();
 //    VectorUtil::subtract(point1, cameraDirectionVector);
 
 
@@ -134,13 +156,19 @@ int main() {
 
     glfwMakeContextCurrent(window);
 
-    if (!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress)) {
-        std::cout << "failed" << std::endl;
-        return -1;
-    }
+//    if (!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress)) {
+//        std::cout << "failed" << std::endl;
+//        return -1;
+//    }
 
     gladLoadGL();
-    glViewport(0, 0, 800, 800);
+    glViewport(0, 0, width, height);
+
+
+
+    glClearColor(255, 255, 255, 1.0F);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glfwSwapBuffers(window);
 
 
     GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
@@ -161,279 +189,296 @@ int main() {
     glDeleteShader(fragmentShader);
 
 
-    GLuint VAO, VBO;
+    GLuint VAO, VBO, EBO;
 
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
+//    glGenBuffers(1, &EBO);
 
     glBindVertexArray(VAO);
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
 
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STREAM_DRAW); //GL_STATIC_DRAW
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_DYNAMIC_DRAW); //GL_STATIC_DRAW
+
+//    glBindBuffer(GL_ARRAY_BUFFER, EBO);
+//    glBufferData(GL_ARRAY_BUFFER, sizeof (indices), indices, GL_DYNAMIC_DRAW);
 
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
     glEnableVertexAttribArray(0);
 
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
+//    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 
 
-    glClearColor(255, 255, 255, 1.0F);
-    glClear(GL_COLOR_BUFFER_BIT);
-    glfwSwapBuffers(window);
+//    glClearColor(255, 255, 255, 1.0F);
+//    glClear(GL_COLOR_BUFFER_BIT);
+//    glfwSwapBuffers(window);
 
-
+//    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
+//        std::cerr << "Failed to initialize GLAD" << std::endl;
+//        return -1;
+//    }
+//
+//    glBegin(GL_QUADS);
+//    glVertex2f(-1.0f, 1.0f); // top left
+//    glVertex2f(1.0f, 1.0f); // top right
+//    glVertex2f(1.0f, -1.0f); // bottom right
+//    glVertex2f(-1.0f, -1.0f); // bottom left
+//    glEnd();
 
 
 //    int tick = 0;
     while (!glfwWindowShouldClose(window)) {
-//        std::cout << tick++;
-        if (WindowsKey::isKeyPressed('W')) {
-//            std::cout << "test";
-            cameraDirectionVector = cameraDirection.getVector();
-            VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, 0.01));
-            cameraDirectionVector = cameraDirection.getVector();
-            cameraDirectionUp = cameraDirection.clone();
-            cameraDirectionRight = cameraDirection.clone();
-            cameraDirectionUp.addPitch(90, true);
-            cameraDirectionRight.addYaw(-90);
-            cameraDirectionRight.setPitch(0);
-
-            cameraDirectionUpVector = cameraDirectionUp.getVector();
-            cameraDirectionRightVector = cameraDirectionRight.getVector();
-//    std::vector<double> point1 = {1, 0, 0};
-//    std::vector<double> point2 = {1, -1, 0};
-//    std::vector<double> point3 = {1, 0, 1};
-            points = {point1, point2, point3};
-//            vertices[9] = {
-//                    0.5F, 0.5F, 0.0F,
-//                    0.6F, 0.5F, 0.0F,
-//                    0.5F, 0.6F, 0.0F,
-//            };
-            //            0.5F, 0.5F, 0.5F,
-            //            0.6F, 0.5F, 0.5F,
-            //            0.5F, 0.6F, 0.5F,
-            for (int i = 0; i < points.size(); i++) {
-                std::vector<double> point = points[i];
-                VectorUtil::subtract(point, cameraPosition); //        point =
-                double distance = VectorUtil::dotProduct(point, cameraDirectionVector);
-                double screenRelativeY = VectorUtil::dotProduct(point, cameraDirectionUpVector);
-                double screenRelativeX = VectorUtil::dotProduct(point, cameraDirectionRightVector);
-                double screenX = screenRelativeX / distance;
-                double screenY = screenRelativeY / distance;
-                vertices[i * 3] = screenX;
-                vertices[i * 3 + 1] = screenY;
-                vertices[1 * 3 + 2] = 0.0;
-            }
-        }
-        if (WindowsKey::isKeyPressed('S')) {
-//            std::cout << "test";
-            cameraDirectionVector = cameraDirection.getVector();
-            VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, -0.01));
-            cameraDirectionVector = cameraDirection.getVector();
-            cameraDirectionUp = cameraDirection.clone();
-            cameraDirectionRight = cameraDirection.clone();
-            cameraDirectionUp.addPitch(90, true);
-            cameraDirectionRight.addYaw(-90);
-            cameraDirectionRight.setPitch(0);
-
-            cameraDirectionUpVector = cameraDirectionUp.getVector();
-            cameraDirectionRightVector = cameraDirectionRight.getVector();
-//    std::vector<double> point1 = {1, 0, 0};
-//    std::vector<double> point2 = {1, -1, 0};
-//    std::vector<double> point3 = {1, 0, 1};
-            points = {point1, point2, point3};
-//            vertices[9] = {
-//                    0.5F, 0.5F, 0.0F,
-//                    0.6F, 0.5F, 0.0F,
-//                    0.5F, 0.6F, 0.0F,
-//            };
-            //            0.5F, 0.5F, 0.5F,
-            //            0.6F, 0.5F, 0.5F,
-            //            0.5F, 0.6F, 0.5F,
-            for (int i = 0; i < points.size(); i++) {
-                std::vector<double> point = points[i];
-                VectorUtil::subtract(point, cameraPosition); //        point =
-                double distance = VectorUtil::dotProduct(point, cameraDirectionVector);
-                double screenRelativeY = VectorUtil::dotProduct(point, cameraDirectionUpVector);
-                double screenRelativeX = VectorUtil::dotProduct(point, cameraDirectionRightVector);
-                double screenX = screenRelativeX / distance;
-                double screenY = screenRelativeY / distance;
-                vertices[i * 3] = screenX;
-                vertices[i * 3 + 1] = screenY;
-                vertices[1 * 3 + 2] = 0.0;
-            }
-        }
-        if (WindowsKey::isKeyPressed('J')) {
-//            std::cout << "test";
+        //<editor-fold desc="Description">
+        ////        std::cout << tick++;
+//        if (WindowsKey::isKeyPressed('W')) {
+////            std::cout << "test";
 //            cameraDirectionVector = cameraDirection.getVector();
-//            VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, 0.001));
-            cameraDirection.addYaw(1);
-            cameraDirectionVector = cameraDirection.getVector();
-            cameraDirectionUp = cameraDirection.clone();
-            cameraDirectionRight = cameraDirection.clone();
-            cameraDirectionUp.addPitch(90, true);
-            cameraDirectionRight.addYaw(-90);
-            cameraDirectionRight.setPitch(0);
-
-            cameraDirectionUpVector = cameraDirectionUp.getVector();
-            cameraDirectionRightVector = cameraDirectionRight.getVector();
-//    std::vector<double> point1 = {1, 0, 0};
-//    std::vector<double> point2 = {1, -1, 0};
-//    std::vector<double> point3 = {1, 0, 1};
-            points = {point1, point2, point3};
-//            vertices[9] = {
-//                    0.5F, 0.5F, 0.0F,
-//                    0.6F, 0.5F, 0.0F,
-//                    0.5F, 0.6F, 0.0F,
-//            };
-            //            0.5F, 0.5F, 0.5F,
-            //            0.6F, 0.5F, 0.5F,
-            //            0.5F, 0.6F, 0.5F,
-            for (int i = 0; i < points.size(); i++) {
-                std::vector<double> point = points[i];
-                VectorUtil::subtract(point, cameraPosition); //        point =
-                double distance = VectorUtil::dotProduct(point, cameraDirectionVector);
-                double screenRelativeY = VectorUtil::dotProduct(point, cameraDirectionUpVector);
-                double screenRelativeX = VectorUtil::dotProduct(point, cameraDirectionRightVector);
-                double screenX = screenRelativeX / distance;
-                double screenY = screenRelativeY / distance;
-                vertices[i * 3] = screenX;
-                vertices[i * 3 + 1] = screenY;
-                vertices[1 * 3 + 2] = 0.0;
-            }
-        }
-        if (WindowsKey::isKeyPressed('L')) {
-//            std::cout << "test";
+//            VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, 0.01));
 //            cameraDirectionVector = cameraDirection.getVector();
-//            VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, 0.001));
-            cameraDirection.addYaw(-1);
-            cameraDirectionVector = cameraDirection.getVector();
-            cameraDirectionUp = cameraDirection.clone();
-            cameraDirectionRight = cameraDirection.clone();
-            cameraDirectionUp.addPitch(90, true);
-            cameraDirectionRight.addYaw(-90);
-            cameraDirectionRight.setPitch(0);
-
-            cameraDirectionUpVector = cameraDirectionUp.getVector();
-            cameraDirectionRightVector = cameraDirectionRight.getVector();
-//    std::vector<double> point1 = {1, 0, 0};
-//    std::vector<double> point2 = {1, -1, 0};
-//    std::vector<double> point3 = {1, 0, 1};
-            points = {point1, point2, point3};
-//            vertices[9] = {
-//                    0.5F, 0.5F, 0.0F,
-//                    0.6F, 0.5F, 0.0F,
-//                    0.5F, 0.6F, 0.0F,
-//            };
-            //            0.5F, 0.5F, 0.5F,
-            //            0.6F, 0.5F, 0.5F,
-            //            0.5F, 0.6F, 0.5F,
-            for (int i = 0; i < points.size(); i++) {
-                std::vector<double> point = points[i];
-                VectorUtil::subtract(point, cameraPosition); //        point =
-                double distance = VectorUtil::dotProduct(point, cameraDirectionVector);
-                double screenRelativeY = VectorUtil::dotProduct(point, cameraDirectionUpVector);
-                double screenRelativeX = VectorUtil::dotProduct(point, cameraDirectionRightVector);
-                double screenX = screenRelativeX / distance;
-                double screenY = screenRelativeY / distance;
-                vertices[i * 3] = screenX;
-                vertices[i * 3 + 1] = screenY;
-                vertices[1 * 3 + 2] = 0.0;
-            }
-        }
-        if (WindowsKey::isKeyPressed('I')) {
-//            std::cout << "test";
+//            cameraDirectionUp = cameraDirection.clone();
+//            cameraDirectionRight = cameraDirection.clone();
+//            cameraDirectionUp.addPitch(90, true);
+//            cameraDirectionRight.addYaw(-90);
+//            cameraDirectionRight.setPitch(0);
+//
+//            cameraDirectionUpVector = cameraDirectionUp.getVector();
+//            cameraDirectionRightVector = cameraDirectionRight.getVector();
+////    std::vector<double> point1 = {1, 0, 0};
+////    std::vector<double> point2 = {1, -1, 0};
+////    std::vector<double> point3 = {1, 0, 1};
+//            points = {point1, point2, point3};
+////            vertices[9] = {
+////                    0.5F, 0.5F, 0.0F,
+////                    0.6F, 0.5F, 0.0F,
+////                    0.5F, 0.6F, 0.0F,
+////            };
+//            //            0.5F, 0.5F, 0.5F,
+//            //            0.6F, 0.5F, 0.5F,
+//            //            0.5F, 0.6F, 0.5F,
+//            for (int i = 0; i < points.size(); i++) {
+//                std::vector<double> point = points[i];
+//                VectorUtil::subtract(point, cameraPosition); //        point =
+//                double distance = VectorUtil::dotProduct(point, cameraDirectionVector);
+//                double screenRelativeY = VectorUtil::dotProduct(point, cameraDirectionUpVector);
+//                double screenRelativeX = VectorUtil::dotProduct(point, cameraDirectionRightVector);
+//                double screenX = screenRelativeX / distance;
+//                double screenY = screenRelativeY / distance;
+//                vertices[i * 3] = screenX;
+//                vertices[i * 3 + 1] = screenY;
+//                vertices[1 * 3 + 2] = 0.0;
+//            }
+//        }
+//        if (WindowsKey::isKeyPressed('S')) {
+////            std::cout << "test";
 //            cameraDirectionVector = cameraDirection.getVector();
-//            VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, 0.001));
-            cameraDirection.addPitch(1, false);
-            cameraDirectionVector = cameraDirection.getVector();
-            cameraDirectionUp = cameraDirection.clone();
-            cameraDirectionRight = cameraDirection.clone();
-            cameraDirectionUp.addPitch(90, true);
-            cameraDirectionRight.addYaw(-90);
-            cameraDirectionRight.setPitch(0);
-
-            cameraDirectionUpVector = cameraDirectionUp.getVector();
-            cameraDirectionRightVector = cameraDirectionRight.getVector();
-//    std::vector<double> point1 = {1, 0, 0};
-//    std::vector<double> point2 = {1, -1, 0};
-//    std::vector<double> point3 = {1, 0, 1};
-            points = {point1, point2, point3};
-//            vertices[9] = {
-//                    0.5F, 0.5F, 0.0F,
-//                    0.6F, 0.5F, 0.0F,
-//                    0.5F, 0.6F, 0.0F,
-//            };
-            //            0.5F, 0.5F, 0.5F,
-            //            0.6F, 0.5F, 0.5F,
-            //            0.5F, 0.6F, 0.5F,
-            for (int i = 0; i < points.size(); i++) {
-                std::vector<double> point = points[i];
-                VectorUtil::subtract(point, cameraPosition); //        point =
-                double distance = VectorUtil::dotProduct(point, cameraDirectionVector);
-                double screenRelativeY = VectorUtil::dotProduct(point, cameraDirectionUpVector);
-                double screenRelativeX = VectorUtil::dotProduct(point, cameraDirectionRightVector);
-                double screenX = screenRelativeX / distance;
-                double screenY = screenRelativeY / distance;
-                vertices[i * 3] = screenX;
-                vertices[i * 3 + 1] = screenY;
-                vertices[1 * 3 + 2] = 0.0;
-            }
-        }
-        if (WindowsKey::isKeyPressed('K')) {
-//            std::cout << "test";
+//            VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, -0.01));
 //            cameraDirectionVector = cameraDirection.getVector();
-//            VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, 0.001));
-            cameraDirection.addPitch(-1, false);
-            cameraDirectionVector = cameraDirection.getVector();
-            cameraDirectionUp = cameraDirection.clone();
-            cameraDirectionRight = cameraDirection.clone();
-            cameraDirectionUp.addPitch(90, true);
-            cameraDirectionRight.addYaw(-90);
-            cameraDirectionRight.setPitch(0);
-
-            cameraDirectionUpVector = cameraDirectionUp.getVector();
-            cameraDirectionRightVector = cameraDirectionRight.getVector();
-//    std::vector<double> point1 = {1, 0, 0};
-//    std::vector<double> point2 = {1, -1, 0};
-//    std::vector<double> point3 = {1, 0, 1};
-            points = {point1, point2, point3};
-//            vertices[9] = {
-//                    0.5F, 0.5F, 0.0F,
-//                    0.6F, 0.5F, 0.0F,
-//                    0.5F, 0.6F, 0.0F,
-//            };
-            //            0.5F, 0.5F, 0.5F,
-            //            0.6F, 0.5F, 0.5F,
-            //            0.5F, 0.6F, 0.5F,
-            for (int i = 0; i < points.size(); i++) {
-                std::vector<double> point = points[i];
-                VectorUtil::subtract(point, cameraPosition); //        point =
-                double distance = VectorUtil::dotProduct(point, cameraDirectionVector);
-                double screenRelativeY = VectorUtil::dotProduct(point, cameraDirectionUpVector);
-                double screenRelativeX = VectorUtil::dotProduct(point, cameraDirectionRightVector);
-                double screenX = screenRelativeX / distance;
-                double screenY = screenRelativeY / distance;
-                vertices[i * 3] = screenX;
-                vertices[i * 3 + 1] = screenY;
-                vertices[1 * 3 + 2] = 0.0;
-            }
-        }
+//            cameraDirectionUp = cameraDirection.clone();
+//            cameraDirectionRight = cameraDirection.clone();
+//            cameraDirectionUp.addPitch(90, true);
+//            cameraDirectionRight.addYaw(-90);
+//            cameraDirectionRight.setPitch(0);
+//
+//            cameraDirectionUpVector = cameraDirectionUp.getVector();
+//            cameraDirectionRightVector = cameraDirectionRight.getVector();
+////    std::vector<double> point1 = {1, 0, 0};
+////    std::vector<double> point2 = {1, -1, 0};
+////    std::vector<double> point3 = {1, 0, 1};
+//            points = {point1, point2, point3};
+////            vertices[9] = {
+////                    0.5F, 0.5F, 0.0F,
+////                    0.6F, 0.5F, 0.0F,
+////                    0.5F, 0.6F, 0.0F,
+////            };
+//            //            0.5F, 0.5F, 0.5F,
+//            //            0.6F, 0.5F, 0.5F,
+//            //            0.5F, 0.6F, 0.5F,
+//            for (int i = 0; i < points.size(); i++) {
+//                std::vector<double> point = points[i];
+//                VectorUtil::subtract(point, cameraPosition); //        point =
+//                double distance = VectorUtil::dotProduct(point, cameraDirectionVector);
+//                double screenRelativeY = VectorUtil::dotProduct(point, cameraDirectionUpVector);
+//                double screenRelativeX = VectorUtil::dotProduct(point, cameraDirectionRightVector);
+//                double screenX = screenRelativeX / distance;
+//                double screenY = screenRelativeY / distance;
+//                vertices[i * 3] = screenX;
+//                vertices[i * 3 + 1] = screenY;
+//                vertices[1 * 3 + 2] = 0.0;
+//            }
+//        }
+//        if (WindowsKey::isKeyPressed('J')) {
+////            std::cout << "test";
+////            cameraDirectionVector = cameraDirection.getVector();
+////            VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, 0.001));
+//            cameraDirection.addYaw(1);
+//            cameraDirectionVector = cameraDirection.getVector();
+//            cameraDirectionUp = cameraDirection.clone();
+//            cameraDirectionRight = cameraDirection.clone();
+//            cameraDirectionUp.addPitch(90, true);
+//            cameraDirectionRight.addYaw(-90);
+//            cameraDirectionRight.setPitch(0);
+//
+//            cameraDirectionUpVector = cameraDirectionUp.getVector();
+//            cameraDirectionRightVector = cameraDirectionRight.getVector();
+////    std::vector<double> point1 = {1, 0, 0};
+////    std::vector<double> point2 = {1, -1, 0};
+////    std::vector<double> point3 = {1, 0, 1};
+//            points = {point1, point2, point3};
+////            vertices[9] = {
+////                    0.5F, 0.5F, 0.0F,
+////                    0.6F, 0.5F, 0.0F,
+////                    0.5F, 0.6F, 0.0F,
+////            };
+//            //            0.5F, 0.5F, 0.5F,
+//            //            0.6F, 0.5F, 0.5F,
+//            //            0.5F, 0.6F, 0.5F,
+//            for (int i = 0; i < points.size(); i++) {
+//                std::vector<double> point = points[i];
+//                VectorUtil::subtract(point, cameraPosition); //        point =
+//                double distance = VectorUtil::dotProduct(point, cameraDirectionVector);
+//                double screenRelativeY = VectorUtil::dotProduct(point, cameraDirectionUpVector);
+//                double screenRelativeX = VectorUtil::dotProduct(point, cameraDirectionRightVector);
+//                double screenX = screenRelativeX / distance;
+//                double screenY = screenRelativeY / distance;
+//                vertices[i * 3] = screenX;
+//                vertices[i * 3 + 1] = screenY;
+//                vertices[1 * 3 + 2] = 0.0;
+//            }
+//        }
+//        if (WindowsKey::isKeyPressed('L')) {
+////            std::cout << "test";
+////            cameraDirectionVector = cameraDirection.getVector();
+////            VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, 0.001));
+//            cameraDirection.addYaw(-1);
+//            cameraDirectionVector = cameraDirection.getVector();
+//            cameraDirectionUp = cameraDirection.clone();
+//            cameraDirectionRight = cameraDirection.clone();
+//            cameraDirectionUp.addPitch(90, true);
+//            cameraDirectionRight.addYaw(-90);
+//            cameraDirectionRight.setPitch(0);
+//
+//            cameraDirectionUpVector = cameraDirectionUp.getVector();
+//            cameraDirectionRightVector = cameraDirectionRight.getVector();
+////    std::vector<double> point1 = {1, 0, 0};
+////    std::vector<double> point2 = {1, -1, 0};
+////    std::vector<double> point3 = {1, 0, 1};
+//            points = {point1, point2, point3};
+////            vertices[9] = {
+////                    0.5F, 0.5F, 0.0F,
+////                    0.6F, 0.5F, 0.0F,
+////                    0.5F, 0.6F, 0.0F,
+////            };
+//            //            0.5F, 0.5F, 0.5F,
+//            //            0.6F, 0.5F, 0.5F,
+//            //            0.5F, 0.6F, 0.5F,
+//            for (int i = 0; i < points.size(); i++) {
+//                std::vector<double> point = points[i];
+//                VectorUtil::subtract(point, cameraPosition); //        point =
+//                double distance = VectorUtil::dotProduct(point, cameraDirectionVector);
+//                double screenRelativeY = VectorUtil::dotProduct(point, cameraDirectionUpVector);
+//                double screenRelativeX = VectorUtil::dotProduct(point, cameraDirectionRightVector);
+//                double screenX = screenRelativeX / distance;
+//                double screenY = screenRelativeY / distance;
+//                vertices[i * 3] = screenX;
+//                vertices[i * 3 + 1] = screenY;
+//                vertices[1 * 3 + 2] = 0.0;
+//            }
+//        }
+//        if (WindowsKey::isKeyPressed('I')) {
+////            std::cout << "test";
+////            cameraDirectionVector = cameraDirection.getVector();
+////            VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, 0.001));
+//            cameraDirection.addPitch(1, false);
+//            cameraDirectionVector = cameraDirection.getVector();
+//            cameraDirectionUp = cameraDirection.clone();
+//            cameraDirectionRight = cameraDirection.clone();
+//            cameraDirectionUp.addPitch(90, true);
+//            cameraDirectionRight.addYaw(-90);
+//            cameraDirectionRight.setPitch(0);
+//
+//            cameraDirectionUpVector = cameraDirectionUp.getVector();
+//            cameraDirectionRightVector = cameraDirectionRight.getVector();
+////    std::vector<double> point1 = {1, 0, 0};
+////    std::vector<double> point2 = {1, -1, 0};
+////    std::vector<double> point3 = {1, 0, 1};
+//            points = {point1, point2, point3};
+////            vertices[9] = {
+////                    0.5F, 0.5F, 0.0F,
+////                    0.6F, 0.5F, 0.0F,
+////                    0.5F, 0.6F, 0.0F,
+////            };
+//            //            0.5F, 0.5F, 0.5F,
+//            //            0.6F, 0.5F, 0.5F,
+//            //            0.5F, 0.6F, 0.5F,
+//            for (int i = 0; i < points.size(); i++) {
+//                std::vector<double> point = points[i];
+//                VectorUtil::subtract(point, cameraPosition); //        point =
+//                double distance = VectorUtil::dotProduct(point, cameraDirectionVector);
+//                double screenRelativeY = VectorUtil::dotProduct(point, cameraDirectionUpVector);
+//                double screenRelativeX = VectorUtil::dotProduct(point, cameraDirectionRightVector);
+//                double screenX = screenRelativeX / distance;
+//                double screenY = screenRelativeY / distance;
+//                vertices[i * 3] = screenX;
+//                vertices[i * 3 + 1] = screenY;
+//                vertices[1 * 3 + 2] = 0.0;
+//            }
+//        }
+//        if (WindowsKey::isKeyPressed('K')) {
+////            std::cout << "test";
+////            cameraDirectionVector = cameraDirection.getVector();
+////            VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, 0.001));
+//            cameraDirection.addPitch(-1, false);
+//            cameraDirectionVector = cameraDirection.getVector();
+//            cameraDirectionUp = cameraDirection.clone();
+//            cameraDirectionRight = cameraDirection.clone();
+//            cameraDirectionUp.addPitch(90, true);
+//            cameraDirectionRight.addYaw(-90);
+//            cameraDirectionRight.setPitch(0);
+//
+//            cameraDirectionUpVector = cameraDirectionUp.getVector();
+//            cameraDirectionRightVector = cameraDirectionRight.getVector();
+////    std::vector<double> point1 = {1, 0, 0};
+////    std::vector<double> point2 = {1, -1, 0};
+////    std::vector<double> point3 = {1, 0, 1};
+//            points = {point1, point2, point3};
+////            vertices[9] = {
+////                    0.5F, 0.5F, 0.0F,
+////                    0.6F, 0.5F, 0.0F,
+////                    0.5F, 0.6F, 0.0F,
+////            };
+//            //            0.5F, 0.5F, 0.5F,
+//            //            0.6F, 0.5F, 0.5F,
+//            //            0.5F, 0.6F, 0.5F,
+//            for (int i = 0; i < points.size(); i++) {
+//                std::vector<double> point = points[i];
+//                VectorUtil::subtract(point, cameraPosition); //        point =
+//                double distance = VectorUtil::dotProduct(point, cameraDirectionVector);
+//                double screenRelativeY = VectorUtil::dotProduct(point, cameraDirectionUpVector);
+//                double screenRelativeX = VectorUtil::dotProduct(point, cameraDirectionRightVector);
+//                double screenX = screenRelativeX / distance;
+//                double screenY = screenRelativeY / distance;
+//                vertices[i * 3] = screenX;
+//                vertices[i * 3 + 1] = screenY;
+//                vertices[1 * 3 + 2] = 0.0;
+//            }
+//        }
+        //</editor-fold>
         glClearColor(255, 255, 255, 1.0F);
         glClear(GL_COLOR_BUFFER_BIT);
         glUseProgram(shaderProgram);
 
-        glm::mat4 model = glm::mat4(1.0f);
-        glm::mat4 view = glm::mat4(1.0f);
-        glm::mat4 proj = glm::mat4(1.0f);
-        view = glm::translate(view, glm::vec3(0.0, -0.5, -2.0));
-        proj = glm::perspective(glm::radians(45.0f), (float)(width/height), 0.1f, 100.0f);
+//        glm::mat4 model = glm::mat4(1.0f);
+//        glm::mat4 view = glm::mat4(1.0f);
+//        glm::mat4 proj = glm::mat4(1.0f);
+//        view = glm::translate(view, glm::vec3(0.0, -0.5, -2.0));
+//        proj = glm::perspective(glm::radians(45.0f), (float)(width/height), 0.1f, 100.0f);
 
 
         glBindVertexArray(VAO);
 
-
+        //dynamic start
         glBindBuffer(GL_ARRAY_BUFFER, VBO);
 //        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
 //        glEnableVertexAttribArray(0);
@@ -443,8 +488,21 @@ int main() {
 //        glVertex2f(0.5, 0.5);
 //        glEnd();
 //        glBindBuffer(GL_ARRAY_BUFFER, VBO);
+//        glBegin(GL_POINTS);
+//        glVertex3f(0.5, 0.5, 0.5);
+//        glEnd();
+
+        GLfloat vertices[] = {
+                0.5F, 0.5F, 0.5F,
+                0.6F, 0.5F, 0.5F,
+                0.5F, 0.6F, 0.5F,
+        };
         glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STREAM_DRAW); //GL_STATIC_DRAW
+        //dynamic stop
+
+
         glDrawArrays(GL_POLYGON, 0, 3);
+//        glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0);
 
 //        glDisableVertexAttribArray(0);
 //        glUseProgram(0);
@@ -462,6 +520,7 @@ int main() {
 
     glDeleteVertexArrays(1, &VBO);
     glDeleteBuffers(1, &VBO);
+//    glDeleteBuffers(1, &EBO);
     glDeleteProgram(shaderProgram);
 
 

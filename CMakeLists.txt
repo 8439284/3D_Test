@@ -29,7 +29,15 @@ add_executable(${PROJECT_NAME} ${src_dir}
         src/WindowsKey.cpp
         src/WindowsKey.h
         src/VectorUtil.h
-        src/CameraDirection.cpp)
+        src/CameraDirection.cpp
+        include/clsdautil/ArrayU.h
+        src/Draw.cpp
+        src/Draw.h
+        src/Line.cpp
+        src/Line.h
+        src/Point.cpp
+        src/Point.h
+)
 target_link_libraries(${PROJECT_NAME}
         glfw3
         openGL32

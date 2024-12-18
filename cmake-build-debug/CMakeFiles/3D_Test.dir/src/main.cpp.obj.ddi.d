@@ -1,5 +1,5 @@
 CMakeFiles\3D_Test.dir\src\main.cpp.obj.ddi: \
- D:/David/CPP_Code/WIP/3D_Test/src/main.cpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/src/main.cpp \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/iostream \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -151,13 +151,14 @@ CMakeFiles\3D_Test.dir\src\main.cpp.obj.ddi: \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/bits/ostream.tcc \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/istream \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc \
- D:/David/CPP_Code/WIP/3D_Test/include/glad/glad.h \
- D:/David/CPP_Code/WIP/3D_Test/include/KHR/khrplatform.h \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glad/glad.h \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/KHR/khrplatform.h \
  D:/David/Program/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
  D:/David/Program/msys64/mingw64/include/stdint.h \
- D:/David/CPP_Code/WIP/3D_Test/include/GLFW/glfw3.h \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/glm.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/_fixes.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/GLFW/glfw3.h \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/clsdautil/ArrayU.h \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/glm.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/_fixes.hpp \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/cmath \
  D:/David/Program/msys64/mingw64/include/math.h \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/bits/specfun.h \
@@ -174,202 +175,202 @@ CMakeFiles\3D_Test.dir\src\main.cpp.obj.ddi: \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/tr1/poly_hermite.tcc \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/setup.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/setup.hpp \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/cassert \
  D:/David/Program/msys64/mingw64/include/assert.h \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/simd/platform.h \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/simd/platform.h \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/cstdint \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/climits \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/cfloat \
  D:/David/Program/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h \
  D:/David/Program/msys64/mingw64/include/float.h \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/fwd.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/qualifier.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/setup.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/vec2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_bool2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_vec2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_vec2.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/compute_vector_relational.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_bool2_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_float2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_float2_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_double2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_double2_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_int2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_int2_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_uint2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_uint2_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/vec3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_bool3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_vec3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_vec3.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_bool3_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_float3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_float3_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_double3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_double3_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_int3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_int3_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_uint3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_uint3_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/vec4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_bool4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_vec4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_vec4.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_bool4_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_float4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_float4_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_double4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_double4_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/setup.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_int4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_int4_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_uint4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_uint4_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/mat2x2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double2x2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat2x2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat2x2.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/matrix.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/mat2x3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double2x3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat2x3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat2x3.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double2x3_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float2x3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float2x3_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/mat2x4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double2x4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat2x4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat2x4.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double2x4_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float2x4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float2x4_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/mat3x2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double3x2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat3x2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat3x2.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double3x2_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float3x2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float3x2_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/mat3x3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double3x3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat3x3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat3x3.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double3x3_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float3x3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float3x3_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/mat3x4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double3x4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat3x4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat3x4.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double3x4_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float3x4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float3x4_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/mat4x2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double4x2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat4x2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat4x2.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double4x2_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float4x2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float4x2_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/mat4x3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double4x3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat4x3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat4x3.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double4x3_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float4x3.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float4x3_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/mat4x4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double4x4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat4x4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_mat4x4.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double4x4_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float4x4.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float4x4_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/func_matrix.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/geometric.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/func_geometric.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/exponential.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_vec1.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_vec1.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/func_exponential.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/vector_relational.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/func_vector_relational.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/_vectorize.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/common.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/func_common.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/compute_common.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_double2x2_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float2x2.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_float2x2_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/trigonometric.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/func_trigonometric.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/packing.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/func_packing.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_half.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_half.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/integer.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/func_integer.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/gtc/matrix_transform.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_projection.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/gtc/constants.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/scalar_constants.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/scalar_constants.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/gtc/constants.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_projection.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_clip_space.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_clip_space.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_transform.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/matrix_transform.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/gtc/matrix_transform.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/gtc/type_ptr.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/gtc/quaternion.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_relational.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_relational.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_float.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/quaternion_common.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/quaternion_geometric.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/quaternion_geometric.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/quaternion_common.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/quaternion_float.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_quat.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/quaternion_relational.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/quaternion_relational.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/type_quat.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/quaternion_float_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/quaternion_double.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/quaternion_double_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/quaternion_trigonometric.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/quaternion_trigonometric.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/quaternion_transform.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/quaternion_transform.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/gtc/quaternion.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/gtc/epsilon.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/detail/setup.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/gtc/epsilon.inl \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/gtc/vec1.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_bool1.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_bool1_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_float1.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_float1_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_double1.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_double1_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_int1.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_int1_precision.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_uint1.hpp \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/ext/vector_uint1_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/fwd.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/qualifier.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/setup.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/vec2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_bool2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_vec2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_vec2.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/compute_vector_relational.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_bool2_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_float2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_float2_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_double2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_double2_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_int2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_int2_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_uint2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_uint2_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/vec3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_bool3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_vec3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_vec3.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_bool3_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_float3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_float3_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_double3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_double3_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_int3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_int3_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_uint3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_uint3_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/vec4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_bool4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_vec4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_vec4.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_bool4_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_float4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_float4_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_double4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_double4_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/setup.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_int4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_int4_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_uint4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_uint4_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/mat2x2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double2x2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat2x2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat2x2.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/matrix.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/mat2x3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double2x3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat2x3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat2x3.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double2x3_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float2x3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float2x3_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/mat2x4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double2x4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat2x4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat2x4.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double2x4_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float2x4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float2x4_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/mat3x2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double3x2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat3x2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat3x2.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double3x2_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float3x2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float3x2_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/mat3x3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double3x3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat3x3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat3x3.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double3x3_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float3x3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float3x3_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/mat3x4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double3x4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat3x4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat3x4.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double3x4_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float3x4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float3x4_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/mat4x2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double4x2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat4x2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat4x2.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double4x2_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float4x2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float4x2_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/mat4x3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double4x3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat4x3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat4x3.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double4x3_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float4x3.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float4x3_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/mat4x4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double4x4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat4x4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_mat4x4.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double4x4_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float4x4.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float4x4_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/func_matrix.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/geometric.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/func_geometric.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/exponential.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_vec1.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_vec1.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/func_exponential.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/vector_relational.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/func_vector_relational.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/_vectorize.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/common.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/func_common.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/compute_common.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_double2x2_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float2x2.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_float2x2_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/trigonometric.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/func_trigonometric.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/packing.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/func_packing.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_half.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_half.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/integer.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/func_integer.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/gtc/matrix_transform.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_projection.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/gtc/constants.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/scalar_constants.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/scalar_constants.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/gtc/constants.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_projection.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_clip_space.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_clip_space.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_transform.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/matrix_transform.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/gtc/matrix_transform.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/gtc/type_ptr.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/gtc/quaternion.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_relational.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_relational.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_float.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/quaternion_common.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/quaternion_geometric.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/quaternion_geometric.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/quaternion_common.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/quaternion_float.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_quat.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/quaternion_relational.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/quaternion_relational.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/type_quat.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/quaternion_float_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/quaternion_double.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/quaternion_double_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/quaternion_trigonometric.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/quaternion_trigonometric.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/quaternion_transform.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/quaternion_transform.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/gtc/quaternion.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/gtc/epsilon.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/detail/setup.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/gtc/epsilon.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/gtc/vec1.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_bool1.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_bool1_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_float1.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_float1_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_double1.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_double1_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_int1.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_int1_precision.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_uint1.hpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/ext/vector_uint1_precision.hpp \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/cstring \
  D:/David/Program/msys64/mingw64/include/string.h \
  D:/David/Program/msys64/mingw64/include/sec_api/string_s.h \
- D:/David/CPP_Code/WIP/3D_Test/include/glm/gtc/type_ptr.inl \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/include/glm/gtc/type_ptr.inl \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/vector \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/bits/stl_vector.h \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
  D:/David/Program/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc \
- D:/David/CPP_Code/WIP/3D_Test/src/WindowsKey.h \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/src/WindowsKey.h \
  D:/David/Program/msys64/mingw64/include/windows.h \
  D:/David/Program/msys64/mingw64/include/sdkddkver.h \
  D:/David/Program/msys64/mingw64/include/excpt.h \
@@ -620,5 +621,8 @@ CMakeFiles\3D_Test.dir\src\main.cpp.obj.ddi: \
  D:/David/Program/msys64/mingw64/include/winsvc.h \
  D:/David/Program/msys64/mingw64/include/mcx.h \
  D:/David/Program/msys64/mingw64/include/imm.h \
- D:/David/CPP_Code/WIP/3D_Test/src/CameraDirection.cpp \
- D:/David/CPP_Code/WIP/3D_Test/src/VectorUtil.h
+ D:/David/CPP_Code/WIP/3D_Test_alpha/src/VectorUtil.h \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/src/Draw.cpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/src/CameraDirection.cpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/src/Point.cpp \
+ D:/David/CPP_Code/WIP/3D_Test_alpha/src/Line.cpp
