@@ -111,9 +111,9 @@ public:
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 
 
-        glClearColor(255, 255, 255, 1.0F);
-        glClear(GL_COLOR_BUFFER_BIT);
-        glfwSwapBuffers(window);
+//        glClearColor(255, 255, 255, 1.0F);
+//        glClear(GL_COLOR_BUFFER_BIT);
+//        glfwSwapBuffers(window);
 
 //        // Generates Vertex Array Object and binds it
 //
@@ -370,9 +370,9 @@ public:
             //</editor-fold>
             glClearColor(255, 255, 255, 1.0F);
             glClear(GL_COLOR_BUFFER_BIT);
-//            glUseProgram(shaderProgram);
-//
-//            glBindVertexArray(VAO);
+            glUseProgram(shaderProgram);
+
+            glBindVertexArray(VAO);
 
 //            // Tell OpenGL which Shader Program we want to use
 //            shaderProgram.Activate();
@@ -390,32 +390,19 @@ public:
 //                VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, 0.01));
 //            }
             if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
-//            std::cout << "test";
                 cameraDirectionVector = cameraDirection.getVector();
                 VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, -0.01));
             }
             if (glfwGetKey(window, GLFW_KEY_J) == GLFW_PRESS) {
-//            std::cout << "test";
-//            cameraDirectionVector = cameraDirection.getVector();
-//            VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, 0.001));
                 cameraDirection.addYaw(1);
             }
             if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS) {
-//            std::cout << "test";
-//            cameraDirectionVector = cameraDirection.getVector();
-//            VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, 0.001));
                 cameraDirection.addYaw(-1);
             }
             if (glfwGetKey(window, GLFW_KEY_I) == GLFW_PRESS) {
-//            std::cout << "test";
-//            cameraDirectionVector = cameraDirection.getVector();
-//            VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, 0.001));
                 cameraDirection.addPitch(1, false);
             }
             if (glfwGetKey(window, GLFW_KEY_K) == GLFW_PRESS) {
-//            std::cout << "test";
-//            cameraDirectionVector = cameraDirection.getVector();
-//            VectorUtil::add(cameraPosition, VectorUtil::multiply(cameraDirectionVector, 0.001));
                 cameraDirection.addPitch(-1, false);
             }
 
@@ -473,25 +460,12 @@ public:
 //                    }
                 }
             }
-//do not modify
-            glClearColor(255, 255, 255, 1.0F);
-            glClear(GL_COLOR_BUFFER_BIT);
-            glUseProgram(shaderProgram);
-
-            glBindVertexArray(VAO);
-            // do not modify end
 
 
 //            VBO1 = *new VBO(vertices, sizeof(vertices));
 
             glBindBuffer(GL_ARRAY_BUFFER, VBO);
 
-
-//            GLfloat vertices[] = {
-//                    0.5F, 0.5F, 0.5F,
-//                    0.6F, 0.5F, 0.5F,
-//                    0.5F, 0.6F, 0.5F,
-//            };
 
             glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW); //GL_STREAM_DRAW  //GL_STATIC_DRAW
             //dynamic stop
