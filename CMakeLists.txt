@@ -26,25 +26,25 @@ file(GLOB_RECURSE src_dir
 
 
 add_executable(${PROJECT_NAME} ${src_dir}
-        src/WindowsKey.cpp
-        src/WindowsKey.h
-        src/VectorUtil.h
-        src/CameraDirection.cpp
-        include/clsdautil/ArrayU.h
-        src/Draw.cpp
-        src/Draw.h
-        src/Line.cpp
-        src/Line.h
-        src/Point.cpp
-        src/Point.h
-        src/shaderClass.h
-        src/shaderClass.cpp
-        src/VBO.cpp
-        src/VBO.h
-        src/EBO.cpp
-        src/EBO.h
-        src/VAO.cpp
-        src/VAO.h
+#        src/WindowsKey.cpp
+#        src/WindowsKey.h
+#        src/VectorUtil.h
+#        src/CameraDirection.cpp
+#        include/clsdautil/ArrayU.h
+#        src/Draw.cpp
+#        src/Draw.h
+#        src/Line.cpp
+#        src/Line.h
+#        src/Point.cpp
+#        src/Point.h
+#        src/shaderClass.h
+#        src/shaderClass.cpp
+#        src/VBO.cpp
+#        src/VBO.h
+#        src/EBO.cpp
+#        src/EBO.h
+#        src/VAO.cpp
+#        src/VAO.h
 )
 target_link_libraries(${PROJECT_NAME}
         glfw3

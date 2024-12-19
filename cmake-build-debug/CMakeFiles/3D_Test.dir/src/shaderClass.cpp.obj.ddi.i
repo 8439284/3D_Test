@@ -48143,6 +48143,20 @@ std::string get_file_contents(const char* filename)
               );
 }
 
+const char* vertexShaderSource = "#version 330 core\n"
+                                 "layout (location = 0) in vec3 aPos;\n"
+                                 "void main()\n"
+                                 "{\n"
+                                 "   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
+                                 "}\0";
+
+const char* fragmentShaderSource = "#version 330 core\n"
+                                   "out vec4 FragColor;\n"
+                                   "void main()\n"
+                                   "{\n"
+                                   "   FragColor = vec4(0.8f, 0.3f, 0.02f, 1.0f);\n"
+                                   "}\n\0";
+
 
 Shader::Shader(const char* vertexFile, const char* fragmentFile)
 {
@@ -48157,22 +48171,22 @@ Shader::Shader(const char* vertexFile, const char* fragmentFile)
 
     GLuint vertexShader = glad_glCreateShader(0x8B31);
 
-    glad_glShaderSource(vertexShader, 1, &vertexSource, 
-# 38 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/shaderClass.cpp" 3 4
-                                                  __null
-# 38 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/shaderClass.cpp"
-                                                      );
+    glad_glShaderSource(vertexShader, 1, &vertexShaderSource, 
+# 52 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/shaderClass.cpp" 3 4
+                                                        __null
+# 52 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/shaderClass.cpp"
+                                                            );
 
     glad_glCompileShader(vertexShader);
 
 
     GLuint fragmentShader = glad_glCreateShader(0x8B30);
 
-    glad_glShaderSource(fragmentShader, 1, &fragmentSource, 
-# 45 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/shaderClass.cpp" 3 4
-                                                      __null
-# 45 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/shaderClass.cpp"
-                                                          );
+    glad_glShaderSource(fragmentShader, 1, &fragmentShaderSource, 
+# 59 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/shaderClass.cpp" 3 4
+                                                            __null
+# 59 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/shaderClass.cpp"
+                                                                );
 
     glad_glCompileShader(fragmentShader);
 

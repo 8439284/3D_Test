@@ -3623,6 +3623,8 @@ public:
 
     VBO(GLfloat* vertices, GLsizeiptr size);
 
+    void BufferData(GLfloat* vertices, GLsizeiptr size);
+
 
     void Bind();
 

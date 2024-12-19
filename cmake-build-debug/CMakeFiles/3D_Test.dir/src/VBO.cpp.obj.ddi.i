@@ -3621,6 +3621,8 @@ public:
 
     VBO(GLfloat* vertices, GLsizeiptr size);
 
+    void BufferData(GLfloat* vertices, GLsizeiptr size);
+
 
     void Bind();
 
@@ -3635,7 +3637,7 @@ VBO::VBO(GLfloat* vertices, GLsizeiptr size)
 {
     glad_glGenBuffers(1, &ID);
     glad_glBindBuffer(0x8892, ID);
-    glad_glBufferData(0x8892, size, vertices, 0x88E8);
+    glad_glBufferData(0x8892, size, vertices, 0x88E4);
 }
 
 
@@ -3654,4 +3656,8 @@ void VBO::Unbind()
 void VBO::Delete()
 {
     glad_glDeleteBuffers(1, &ID);
+}
+
+void VBO::BufferData(GLfloat *vertices, GLsizeiptr size) {
+    glad_glBufferData(0x8892, size, vertices, 0x88E4);
 }
