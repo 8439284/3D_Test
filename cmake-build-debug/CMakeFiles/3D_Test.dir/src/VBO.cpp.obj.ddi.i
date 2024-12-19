@@ -3635,7 +3635,7 @@ VBO::VBO(GLfloat* vertices, GLsizeiptr size)
 {
     glad_glGenBuffers(1, &ID);
     glad_glBindBuffer(0x8892, ID);
-    glad_glBufferData(0x8892, size, vertices, 0x88E4);
+    glad_glBufferData(0x8892, size, vertices, 0x88E8);
 }
 
 

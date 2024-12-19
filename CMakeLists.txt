@@ -51,6 +51,8 @@ target_link_libraries(${PROJECT_NAME}
         openGL32
 )
 
+#configure_file(<input> <output> COPYONLY)
+
 #include_directories(GL)
 #target_link_libraries(test ${OPENGL_LIBRARIES})
 #target_link_libraries(test ${GLUT_LIBRARIES})
