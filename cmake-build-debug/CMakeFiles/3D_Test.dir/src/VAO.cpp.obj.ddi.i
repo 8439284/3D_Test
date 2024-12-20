@@ -3643,7 +3643,7 @@ public:
     VAO();
 
 
-    void LinkVBO(VBO& VBO, GLuint layout);
+    void LinkAttrib(VBO& VBO, GLuint layout, GLuint numComponents, GLenum type, GLsizeiptr stride, void* offset);
 
     void Bind();
 
@@ -3660,10 +3660,11 @@ VAO::VAO()
 }
 
 
-void VAO::LinkVBO(VBO& VBO, GLuint layout)
+void VAO::LinkAttrib(VBO& VBO, GLuint layout, GLuint numComponents, GLenum type, GLsizeiptr stride, void* offset)
 {
     VBO.Bind();
-    glad_glVertexAttribPointer(layout, 3, 0x1406, 0, 0, (void*)0);
+
+    glad_glVertexAttribPointer(layout, numComponents, type, 0, stride, offset);
     glad_glEnableVertexAttribArray(layout);
     VBO.Unbind();
 }

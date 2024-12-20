@@ -51,6 +51,14 @@ target_link_libraries(${PROJECT_NAME}
         openGL32
 )
 
+#add_custom_target(copy_data
+#        COMMAND ${CMAKE_COMMAND} -E copy_directory_if_different
+#        "${CMAKE_CURRENT_SOURCE_DIR}/datadir/"
+#        "$<TARGET_FILE_DIR:mytarget>/datadir"
+#        COMMENT "Copying data"
+#)
+#add_dependencies(mytarget copy_data)
+
 #configure_file(<input> <output> COPYONLY)
 
 #include_directories(GL)

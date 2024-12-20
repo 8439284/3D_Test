@@ -48171,22 +48171,22 @@ Shader::Shader(const char* vertexFile, const char* fragmentFile)
 
     GLuint vertexShader = glad_glCreateShader(0x8B31);
 
-    glad_glShaderSource(vertexShader, 1, &vertexShaderSource, 
+    glad_glShaderSource(vertexShader, 1, &vertexSource, 
 # 52 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/shaderClass.cpp" 3 4
-                                                        __null
+                                                  __null
 # 52 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/shaderClass.cpp"
-                                                            );
+                                                      );
 
     glad_glCompileShader(vertexShader);
 
 
     GLuint fragmentShader = glad_glCreateShader(0x8B30);
 
-    glad_glShaderSource(fragmentShader, 1, &fragmentShaderSource, 
+    glad_glShaderSource(fragmentShader, 1, &fragmentSource, 
 # 59 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/shaderClass.cpp" 3 4
-                                                            __null
+                                                      __null
 # 59 "D:/David/CPP_Code/WIP/3D_Test_alpha/src/shaderClass.cpp"
-                                                                );
+                                                          );
 
     glad_glCompileShader(fragmentShader);
 
